@@ -1,9 +1,11 @@
 import React, {useContext, useEffect, useState} from "react";
+import {NotificationTitle,TodoTitle} from '../index'
+import useNotifiCation from "./useNotifiCation";
 
 const Todoform = ()=>{
 
-   // const title = useContext(TodoTitle);
-   // const Notifi = useContext(NotificationTitle);
+    const title = useContext(TodoTitle)
+    const Notifi = useContext(NotificationTitle)
 
     const [Workn, setWorkn] = useState('');
 
@@ -36,12 +38,13 @@ const Todoform = ()=>{
    // useNotifiCation(Notifi,Tododata);  
     }
 
+    useNotifiCation(Notifi,Tododata);  
 
     return(
         <>
         <section>
             <header >
-                <h1>WORKS TO BE DONE</h1>
+                <h1>{title}</h1>
                 
                 <form onSubmit={formSubmit}>
                 <input 
