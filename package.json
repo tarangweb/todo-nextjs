@@ -2,11 +2,11 @@
   "name": "nextjs-typescript-tailwind",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    
+  "scripts": {    
     "dev": "next dev",
     "build": "next build",
-    "start": "node_modules/next/dist/bin/next start -p $PORT",
+    "export": "next export",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
