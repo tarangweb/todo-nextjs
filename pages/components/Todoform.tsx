@@ -1,5 +1,4 @@
 import React, {useContext, useEffect, useState} from "react";
-import { FontAwesomeIcon } from "../../node_modules/@fortawesome/react-fontawesome/index";
 
 const Todoform = ()=>{
 
